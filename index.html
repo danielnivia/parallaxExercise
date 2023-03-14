@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax Exercise</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Load the audio used in the site -->
+	<audio id="riverSavegre">
+		<source src="media/savegre.mp3" autoplay="true" muted="true" type="audio/mp3">
+	</audio>
+	<!-- Navigation bar -->
+	<div id="nav">
+		<!-- link to divs on the same page using their id names -->
+		<a href="#forest"><div class="nav-btn" id="first-page"></div></a>
+		<a href="#first-text"><div class="nav-btn" id="second-page"></div></a>
+		<a href="#river"><div class="nav-btn" id="third-page"></div></a>
+		<a href="#second-text"><div class="nav-btn" id="fourth-page"></div></a>
+		<a href="#river2nd"><div class="nav-btn" id="fifth-page"></div></a>
+		<a href="#house"><div class="nav-btn" id="sixth-page"></div></a>
+
+	</div>
+	<!-- 
+	Four full browser size sections:
+	1. Forest
+	2. Text section
+	3. River
+	4. Text section // sound section button
+	5. River 2 >> MinisLookingSmile
+	6. House + MinisSmile
+	 -->
+	<div id="forest">
+		<!-- Content to display inside the mountain div -->
+		<div id="quetzal-div">
+			<span id="quetzal-text">Welcome to San Gerardo de Dota</span>
+			<img id="quetzal" src="media/maskquetzal.png">
+		</div>
+	</div>
+	<div id="first-text" class="text-section">
+		<p class="text">San Gerardo de Dota is a small village located in the mountain range of Talamanca in Costa Rica. It takes around 2 hours drive from the capital, San Jose. Minis, will be your guide during the rest of the trip, she enjoys company to walk. Did you see the quetzal bird? This region is famous for the sightings of this beautiful bird, distinguished by its green feathers and red chest.</p>
+	</div>
+	<div id="river">
+		<!-- Content to display inside the river div -->
+		<div id="fish-div">
+			<img id="fish" src="media/masktrout.png">
+			<!-- Click on the button for river sounds -->
+			<span id="fish-text">Fish swiming and jumping down the river</span>
+		</div>
+	</div>
+	<div id="second-text" class="text-section">
+		<p class="text">The Savegre river passes through San Gerardo de Dota. This pristine river provides to some relaxing sounds that help you escape from the city soundscape. This region is famous for fish farms of rainbow trout. Most restaurants and hotel serve this delicious fish in diverse kinds of ways.
+		</p>
+	</div>
+
+	<div id="river2nd">
+		<!-- Create a button to play the river sounds -->
+		<!-- create a separate div for the button itself -->
+		<div class="riverButton">
+			<!-- name the button to use in javascript getelement -->
+			<button id="riverBtn">Listen to the River</button>
+		</div>
+		
+	</div>
+	
+	<div id="house">
+		<!-- Nothing particular to display, just using the same method to display the image in the previous divs -->
+	</div>
+
+	<!-- Minis div position is fixed on the bottom left corner of the web page -->
+	<div id="minis-div">
+		<span id="minis-text">Zzzzz</span>
+		<img id="minis" src="media/MaskMinisClosed.png">
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
